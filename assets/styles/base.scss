@@ -1,0 +1,33 @@
+// Import Tailwind base, components, and utilities
+@tailwind base;           // Apply base styles from Tailwind
+@tailwind components;     // Apply component styles from Tailwind
+@tailwind utilities;      // Apply utility classes from Tailwind
+
+/* Reset some default styles for better consistency across elements */
+* {
+    padding: 0;           // Reset all padding
+    margin: 0;            // Reset all margin
+    box-sizing: border-box; // Ensure border-box box-sizing is consistent
+}
+
+/* Ensure all images have a consistent max width and maintain aspect ratio */
+img {
+    max-width: 100%;     // Ensure images don't exceed full width of their container
+    height: auto;        // Maintain aspect ratio of images
+}
+
+/* Remove default margin from heading and paragraph elements for better spacing */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;            // Reset margins for headings and paragraphs
+    padding: 0;           // Reset padding for headings and paragraphs
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../font/static/Inter_18pt-Regular.ttf) format('truetype');
+}
+
+
+body{
+    font-family: 'Inter';
+}
