@@ -5,6 +5,20 @@ export default defineNuxtConfig({
   devtools: { enabled: false }, // Disable DevTools
   // Other configurations...
 
+  app: {
+    head: {
+      title: 'Landing page 1',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: 'Default description' },
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/logo.svg' },
+      ],
+    },
+  },
+
 
   modules: ['@nuxtjs/tailwindcss' , '@nuxt/image'], // Tailwind CSS module
 
